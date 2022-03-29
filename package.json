@@ -1,0 +1,69 @@
+{
+  "name": "adonisjs-verifyme",
+  "version": "0.0.1",
+  "description": "An addon/plugin package to provide KYC and identity biometrics, address and employment verification services in AdonisJS 4.0+",
+  "main": "index.js",
+  "files": [
+    "src",
+    "config",
+    "providers",
+    "instructions.js",
+    "instructions.md"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "standard --fix",
+    "pretest": "npm run lint",
+    "test": "nyc node japaFile.js",
+    "test:win": "node ./node_modules/japa-cli/index.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [
+    "kyc",
+    "biometrics",
+    "adonisjs",
+    "verifyme",
+    "APIs",
+    "adonis-framework",
+    "identity",
+    "adonisjs-addon"
+  ],
+  "author": "<StitchNG> https://github.com/stitchng",
+  "license": "MIT",
+  "nyc": {
+    "exclude": [
+      "test"
+    ]
+  },
+  "standard": {
+    "globals": [
+      "use",
+      "test"
+    ]
+  },
+  "dependencies": {
+    "@adonisjs/generic-exceptions": "^2.0.1",
+    "verifyme-nodejs":"^0.0.1",
+    "debug": "^3.1.2"
+  },
+  "devDependencies": {
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/sink": "^1.0.6",
+    "coveralls": "^3.0.2",
+    "japa": "^2.0.5",
+    "japa-cli": "^1.0.1",
+    "nyc": "^13.0.1",
+    "semver": "^5.5.0",
+    "standard": "^12.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stitchng/adonis-verifyme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stitchng/adonis-verifyme/issues"
+  },
+  "homepage": "https://github.com/stitchng/adonis-verifyme#readme"
+}
