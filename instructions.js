@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- * adonis-sse
+ * adonis-verifyme
  *
  * @license MIT
  * @copyright Slynova - Romain Lanz <romain.lanz@slynova.ch>
